@@ -1,15 +1,9 @@
 #include "bn_core.h"
-#include "bn_sprite_ptr.h"
-#include "bn_sprite_text_generator.h"
-#include "common_fixed_8x16_sprite_font.h"
+#include "bn_regular_bg_ptr.h"
+
+#include "bn_regular_bg_items_test_room.h"
 
 void main_scene() {
-    bn::sprite_text_generator text_generator(common::fixed_8x16_sprite_font);
-    text_generator.set_center_alignment();
-
-    bn::vector<bn::sprite_ptr, 11> text_sprites;
-    text_generator.generate(0, 0, "hello, world", text_sprites);
-
     while (true) {
         bn::core::update();
     }
@@ -17,6 +11,8 @@ void main_scene() {
 
 int main() {
     bn::core::init();
+
+    bn::regular_bg_ptr background = bn::regular_bg_items::test_room.create_bg(0, 0);
 
     while (true) {
         main_scene();
