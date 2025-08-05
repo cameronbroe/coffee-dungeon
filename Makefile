@@ -31,7 +31,7 @@
 #
 # All directories are specified relative to the project directory where the makefile is found.
 #---------------------------------------------------------------------------------------------------------------------
-TARGET      	:=  butano-template
+TARGET      	:=  coffee-dungeon
 BUILD       	:=  build
 LIBBUTANO   	:=  ./butano/butano
 PYTHON      	:=  python
@@ -44,7 +44,7 @@ AUDIOBACKEND	:=  maxmod
 AUDIOTOOL		:=
 DMGAUDIO    	:=  dmg_audio
 DMGAUDIOBACKEND	:=  default
-ROMTITLE    	:=  ROM TITLE
+ROMTITLE    	:=  COFFEE DUNGEON
 ROMCODE     	:=  SBTP
 USERFLAGS   	:=
 USERCXXFLAGS	:=
